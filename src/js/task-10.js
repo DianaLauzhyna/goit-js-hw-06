@@ -19,3 +19,4 @@ function getRandomHexColor() {
 }
 Створи функцію destroyBoxes(), яка очищає вміст div#boxes, у такий спосіб видаляючи всі створені елементи.*/
 
+

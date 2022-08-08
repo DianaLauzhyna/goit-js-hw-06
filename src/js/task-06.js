@@ -22,19 +22,16 @@
   border-color: #f44336;
 }*/
 
-const validationInput = document.querySelector('#validation-input');
+const validationInput = document.querySelector("#validation-input");
 
-validationInput.addEventListener('blur', e => {
-    const inputLength = e.currentTarget.value.length;
-    const requiredLength  = Number(validationInput.dataset.length);
-    if (inputLength === requiredLength)
-    {
-        validationInput.classList.remove('invalid');
-        validationInput.classList.add('valid')
-    }
-    else
-    {
-        validationInput.classList.remove('valid');
-        validationInput.classList.add('invalid') 
-    }
+validationInput.addEventListener("blur", (e) => {
+  const inputLength = e.currentTarget.value.length;
+  const requiredLength = Number(validationInput.dataset.length);
+  if (inputLength === requiredLength) {
+    validationInput.classList.remove("invalid");
+    validationInput.classList.add("valid");
+  } else {
+    validationInput.classList.remove("valid");
+    validationInput.classList.add("invalid");
+  }
 });
